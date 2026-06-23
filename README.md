@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 About The Project
+## 📌 About 
 
 ExpenseBuddy is a full-stack web application designed to help users track personal expenses, manage shared group expenses, and split bills seamlessly.
 
