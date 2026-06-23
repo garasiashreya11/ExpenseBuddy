@@ -1,0 +1,13 @@
+.bg-surface{ background: var(--card); border:1px solid var(--border); }
+.border-surface{ border-color: var(--border) !important; }
+.text-main{ color: var(--text-color) !important; }
+.text-muted{ color: var(--muted) !important; }
+
+/* Small chip styled with primary color */
+.chip{ display:inline-block; padding:2px 8px; border-radius:8px; font-size:12px; font-weight:600; }
+.chip-primary{ background: var(--ring); color: var(--primary); }
+
+/* Helper card override when needed inside lists */
+.li-card{ background: var(--card); border:1px solid var(--border); border-left-width:4px; border-radius:10px; }
+
+/* Buttons respect theme via existing btn classes; no change needed here */

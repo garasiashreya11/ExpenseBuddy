@@ -1,0 +1,36 @@
+.nav-header{position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;background:var(--card);backdrop-filter: blur(10px);color:var(--text-color);padding:12px 22px;border-bottom:1px solid var(--border)}
+.nav-logo{font-weight:800;letter-spacing:.3px;display:flex;align-items:center;gap:10px}
+.nav-logo .logo-mark{width:30px;height:30px;border-radius:10px;background:var(--primary);display:inline-flex;align-items:center;justify-content:center;box-shadow:0 6px 16px var(--ring)}
+.nav-logo .logo-mark i{color:#fff;font-size:14px}
+.nav-logo .brand-text{color:var(--text-color);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:10px}
+.nav-links a{color:var(--text-color);text-decoration:none;padding:8px 14px;border-radius:999px;transition:all .2s ease;border:1px solid transparent}
+/* Better hover for dark and light */
+.nav-links a:hover{background:var(--border);color:var(--text-color)}
+.nav-links a.active{color:#fff;background:var(--primary);border-color:var(--primary);box-shadow:0 0 0 4px var(--ring)}
+.signout-btn{margin-left:8px;background:transparent;border:1px solid var(--danger);color:var(--text-color);padding:8px 14px;border-radius:12px;cursor:pointer;transition:background .15s,color .15s,border-color .15s, transform .15s}
+.signout-btn:hover{background:var(--ring);border-color:var(--danger);color:var(--text-color);transform: translateY(-1px)}
+.signout-btn:active{background:var(--danger);color:#fff;border-color:var(--danger)}
+
+/* Dark mode specific styles */
+[data-theme="dark"] .nav-links a {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .nav-links a:hover {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+[data-theme="dark"] .nav-logo .brand-text {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .signout-btn {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .signout-btn:hover {
+  color: #ffffff !important;
+}

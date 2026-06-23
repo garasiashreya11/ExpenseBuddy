@@ -1,0 +1,7 @@
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:1000}
+.modal{background:var(--card);border-radius:14px;padding:20px 22px;width:min(92vw,380px);box-shadow:0 20px 60px var(--ring);text-align:center}
+.modal-icon{width:54px;height:54px;margin:6px auto 6px;border-radius:14px;background:var(--primary);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px var(--ring)}
+.modal-icon i{color:#fff;font-size:20px}
+.modal-title{margin:4px 0 8px;color:var(--text-color);font-weight:700;font-size:18px}
+.modal-message{margin:8px 0 16px;color:var(--text-color);font-weight:500}
+.modal-actions{display:flex;gap:10px;justify-content:center}

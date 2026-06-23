@@ -1,0 +1,161 @@
+/* Global typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+p, span, div {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Button typography */
+button, .btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+/* Input typography */
+input, select, textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+/* Global UI enhancements matching the provided mockups */
+:root{
+  /* Theme variables (light defaults) */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --btn-bg: #e0e0e0;
+  --btn-text: #000000;
+  --card:#fff;--muted:#64748b;--primary:#2563eb;--success:#10b981;--danger:#ef4444;--warning:#f59e0b;--ring:rgba(37,99,235,0.12);--border:#e5e7eb;
+  /* category colors */
+  --cat-food:#fb923c; --cat-transport:#60a5fa; --cat-shopping:#a78bfa; --cat-entertain:#f472b6; --cat-health:#34d399; --cat-bills:#f59e0b; --cat-groceries:#22d3ee;
+}
+
+/* Navbar pills */
+.nav-header{background:var(--card); border-bottom:1px solid var(--border);} 
+.nav-links a{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid transparent; color: var(--text-color);}
+.nav-links a.active{border-color:var(--primary); box-shadow:0 0 0 4px var(--ring)}
+
+/* Shared cards */
+.card{background:var(--card); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,0.04)}
+.section-title{display:flex; align-items:center; gap:8px; color:var(--text-color); font-weight:700;}
+.muted{color:var(--muted)}
+
+/* Dashboard layout */
+.content{max-width:1100px; margin:24px auto; padding:0 16px}
+.stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin:16px 0}
+.stat-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px}
+.stat-card .value{font-size:20px; font-weight:700; color: var(--text-color);}
+.stat-card .change{font-size:12px; color:var(--muted)}
+.charts-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px}
+.chart-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px}
+
+/* Transactions list */
+.transactions{margin-top:16px}
+.transactions h3{display:flex; align-items:center; justify-content:space-between; color: var(--text-color);}
+.transactionsList{display:flex; flex-direction:column; gap:10px}
+.transaction-item{background:var(--card); border:1px solid var(--border); padding:12px 14px; border-radius:12px; display:flex; align-items:center; justify-content:space-between}
+.transaction-item.income .amount{color:var(--success)}
+.transaction-item.expense .amount{color:var(--danger)}
+.transaction-item .details{display:flex; align-items:center; gap:10px; color:var(--text-color)}
+.transaction-item .details i{width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; background:var(--ring); color:var(--primary); border-radius:50%}
+.transaction-item .amount.actions{display:flex; align-items:center; gap:8px}
+.icon-btn.delete{background:var(--danger); color:#ffffff; border:1px solid var(--danger); width:28px; height:28px; border-radius:6px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer}
+.icon-btn.delete:hover{background:var(--danger); opacity: 0.8;}
+.transaction-item.cat-food .details i{ background: rgba(251,146,60,0.15); color: var(--cat-food); }
+.transaction-item.cat-transport .details i{ background: rgba(96,165,250,0.15); color: var(--cat-transport); }
+.transaction-item.cat-shopping .details i{ background: rgba(167,139,250,0.15); color: var(--cat-shopping); }
+.transaction-item.cat-entertainment .details i{ background: rgba(244,114,182,0.15); color: var(--cat-entertain); }
+.transaction-item.cat-health .details i{ background: rgba(52,211,153,0.15); color: var(--cat-health); }
+.transaction-item.cat-bills .details i{ background: rgba(245,158,11,0.15); color: var(--cat-bills); }
+.transaction-item.cat-groceries .details i{ background: rgba(34,211,238,0.15); color: var(--cat-groceries); }
+
+[data-theme="dark"] .transaction-item.cat-food .details i{ background: rgba(253,186,116,0.15); }
+[data-theme="dark"] .transaction-item.cat-transport .details i{ background: rgba(147,197,253,0.15); }
+[data-theme="dark"] .transaction-item.cat-shopping .details i{ background: rgba(196,181,253,0.15); }
+[data-theme="dark"] .transaction-item.cat-entertainment .details i{ background: rgba(249,168,212,0.15); }
+[data-theme="dark"] .transaction-item.cat-health .details i{ background: rgba(110,231,183,0.15); }
+[data-theme="dark"] .transaction-item.cat-bills .details i{ background: rgba(251,191,36,0.15); }
+[data-theme="dark"] .transaction-item.cat-groceries .details i{ background: rgba(103,232,249,0.15); }
+
+/* AddExpense form basic layout */
+.main-container{max-width:1100px; margin:24px auto; padding:0 16px}
+.expense-form{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px}
+.form-group{margin-bottom:14px}
+.save-btn{background:var(--primary); color:#fff; border:none; padding:10px 14px; border-radius:10px}
+.btn.btn-secondary{background:var(--card); color:var(--primary); border:1px solid var(--border); padding:6px 10px; border-radius:8px; cursor:pointer}
+.btn.btn-secondary:hover{background:var(--border)}
+
+/* Inputs look */
+input, select, textarea{border:1px solid var(--border); background: var(--card); color: var(--text-color);}
+input:focus, select:focus, textarea:focus{outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--ring);}
+textarea{resize: vertical}
+
+/* Auth spacing overrides come from Auth.css */
+
+/* ===================== DARK THEME ===================== */
+/* Dark theme is now controlled by JavaScript via theme.js */
+
+/* Additional dark theme specific overrides */
+[data-theme="dark"] .nav-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+[data-theme="dark"] .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .chart-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .transaction-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .expense-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: var(--card);
+  color: var(--text-color);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .btn.btn-secondary {
+  background: var(--card);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .btn.btn-secondary:hover {
+  background: var(--border);
+}
+
+/* Category colors for dark theme */
+[data-theme="dark"] {
+  --cat-food: #fdba74;
+  --cat-transport: #93c5fd;
+  --cat-shopping: #c4b5fd;
+  --cat-entertain: #f9a8d4;
+  --cat-health: #6ee7b7;
+  --cat-bills: #fbbf24;
+  --cat-groceries: #67e8f9;
+}
